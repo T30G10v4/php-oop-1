@@ -7,7 +7,7 @@
 
         public function printMovie() {
 
-            return "Nome =".$this->name." Genere =".$this->genre.".";
+            return "Nome = ".$this->name.", Genere = ".$this->genre.".";
             
         }
 
@@ -21,7 +21,7 @@
     }
 
     $strangeDays = new Movie("Strange Days", "Sci-Fi");
-    $lordOfTheRings = new Movie("The Lord Of THre Rings","Fantasy");
+    $lordOfTheRings = new Movie("The Lord Of The Rings","Fantasy");
 
 ?>
 
@@ -35,8 +35,8 @@
 </head>
 <body>
     
-    <h2><?php $strangeDays->printMovie(); ?></h2>
-    <h2><?php $lordOfTheRings->printMovie(); ?></h2>
+    <h2><?php echo $strangeDays->printMovie(); ?></h2>
+    <h2><?php echo $lordOfTheRings->printMovie(); ?></h2>
 
 </body>
 </html>
